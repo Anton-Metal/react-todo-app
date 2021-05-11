@@ -8,6 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  // det som skjuter in react koden i sidan
   document.getElementById('root')
 );
 
