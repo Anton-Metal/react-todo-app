@@ -6,6 +6,7 @@ function App() {
     <div className="App">
 
 		<h1>Hej</h1>
+		<h2>Väldigt fin CSS, i know</h2>
 		<TodoList />
      
     </div>

@@ -29,6 +29,12 @@
 	border-radius: 0.3em;
 	margin-left: 1em;
 }
+.todo-list button:hover { 
+
+	cursor: pointer;
+
+}
+
 .todo-list input {
 
 	padding: 0.4em 1.0em;

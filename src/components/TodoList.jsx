@@ -11,6 +11,16 @@ const TodoList = () => {
 	{ id: 3, title: 'Blast metal louder than HELL', isDone: true}
 ])
 
+	// lägga till en todo
+	const addTodoItem = title => {
+		// för att sätta den nya listan, alltså det man har skrivt 
+		// ny lista som inerhåller en kopia av gamla todolist, och sen sätter man in det nya element där 
+		setTodoList( [...todoList, { id: todoList.length + 1, title: title, isDone: false }
+		
+		] )
+
+	}
+
 	// för att markera vilket element är färdigt 
 	const markAsdone = id => {
 		//gå in i listan och ändra på ett element 
@@ -49,7 +59,7 @@ const TodoList = () => {
 		
 		</ul>
 
-		<AddTodo />
+		<AddTodo addTodoItem={addTodoItem}/>
 
 	</div>
 )}
